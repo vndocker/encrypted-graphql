@@ -6,13 +6,13 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/extension"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/transport"
 
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 
-	"github.com/LaBanHSPO/gqlgen/example/chat"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/example/chat"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
 	"github.com/gorilla/websocket"
 	"github.com/opentracing/opentracing-go"
 	"github.com/rs/cors"

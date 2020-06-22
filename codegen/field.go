@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2/ast"
 )

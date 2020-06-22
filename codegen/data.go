@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2/ast"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
 )
 
 // Data is a unified model of the code to be generated. Plugins may modify this structure to do things like implement

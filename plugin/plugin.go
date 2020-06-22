@@ -3,8 +3,8 @@
 package plugin
 
 import (
-	"github.com/LaBanHSPO/gqlgen/codegen"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
 	"github.com/vektah/gqlparser/v2/ast"
 )
 

@@ -10,7 +10,7 @@ resolver:
   type: Resolver
 
 autobind:
-  - "github.com/LaBanHSPO/gqlgen/codegen/testserver"
-  - "github.com/LaBanHSPO/gqlgen/codegen/testserver/introspection"
-  - "github.com/LaBanHSPO/gqlgen/codegen/testserver/invalid-packagename"
+  - "github.com/vndocker/encrypted-graphql/codegen/testserver"
+  - "github.com/vndocker/encrypted-graphql/codegen/testserver/introspection"
+  - "github.com/vndocker/encrypted-graphql/codegen/testserver/invalid-packagename"
 

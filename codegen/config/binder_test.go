@@ -4,7 +4,7 @@ import (
 	"go/types"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/internal/code"
+	"github.com/vndocker/encrypted-graphql/internal/code"
 
 	"github.com/stretchr/testify/require"
 	"github.com/vektah/gqlparser/v2"
@@ -28,7 +28,7 @@ func TestSlicePointerBinding(t *testing.T) {
 			panic(err)
 		}
 
-		require.Equal(t, ta.GO.String(), "[]*github.com/LaBanHSPO/gqlgen/example/chat.Message")
+		require.Equal(t, ta.GO.String(), "[]*github.com/vndocker/encrypted-graphql/example/chat.Message")
 	})
 
 	t.Run("with OmitSliceElementPointers", func(t *testing.T) {
@@ -41,14 +41,14 @@ func TestSlicePointerBinding(t *testing.T) {
 			panic(err)
 		}
 
-		require.Equal(t, ta.GO.String(), "[]github.com/LaBanHSPO/gqlgen/example/chat.Message")
+		require.Equal(t, ta.GO.String(), "[]github.com/vndocker/encrypted-graphql/example/chat.Message")
 	})
 }
 
 func createBinder(cfg Config) (*Binder, *ast.Schema) {
 	cfg.Models = TypeMap{
 		"Message": TypeMapEntry{
-			Model: []string{"github.com/LaBanHSPO/gqlgen/example/chat.Message"},
+			Model: []string{"github.com/vndocker/encrypted-graphql/example/chat.Message"},
 		},
 	}
 	cfg.Packages = &code.Packages{}

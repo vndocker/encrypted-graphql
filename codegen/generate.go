@@ -1,7 +1,7 @@
 package codegen
 
 import (
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
 )
 
 func GenerateCode(data *Data) error {

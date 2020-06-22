@@ -1,5 +1,5 @@
 models:
   Order:
-    model: github.com/LaBanHSPO/gqlgen/example/dataloader.Order
+    model: github.com/vndocker/encrypted-graphql/example/dataloader.Order
   Customer:
-    model: github.com/LaBanHSPO/gqlgen/example/dataloader.Customer
+    model: github.com/vndocker/encrypted-graphql/example/dataloader.Customer

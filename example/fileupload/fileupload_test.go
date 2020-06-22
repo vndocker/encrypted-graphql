@@ -13,10 +13,10 @@ import (
 	"net/textproto"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/example/fileupload/model"
-	"github.com/LaBanHSPO/gqlgen/graphql"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
+	"github.com/vndocker/encrypted-graphql/example/fileupload/model"
+	"github.com/vndocker/encrypted-graphql/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/transport"
 	"github.com/stretchr/testify/require"
 )
 

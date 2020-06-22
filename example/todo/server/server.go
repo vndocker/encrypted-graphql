@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/LaBanHSPO/gqlgen/example/todo"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/example/todo"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 )
 
 func main() {

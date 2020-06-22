@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 	"github.com/stretchr/testify/require"
 	"github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"

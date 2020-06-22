@@ -1,8 +1,8 @@
-# gqlgen [![Continuous Integration](https://github.com/LaBanHSPO/gqlgen/workflows/Continuous%20Integration/badge.svg)](https://github.com/LaBanHSPO/gqlgen/actions) [![Read the Docs](https://badgen.net/badge/docs/available/green)](http://gqlgen.com/) [![GoDoc](https://godoc.org/github.com/LaBanHSPO/gqlgen?status.svg)](https://godoc.org/github.com/LaBanHSPO/gqlgen)
+# gqlgen [![Continuous Integration](https://github.com/vndocker/encrypted-graphql/workflows/Continuous%20Integration/badge.svg)](https://github.com/vndocker/encrypted-graphql/actions) [![Read the Docs](https://badgen.net/badge/docs/available/green)](http://gqlgen.com/) [![GoDoc](https://godoc.org/github.com/vndocker/encrypted-graphql?status.svg)](https://godoc.org/github.com/vndocker/encrypted-graphql)
 
 ## What is gqlgen?
 
-[gqlgen](https://github.com/LaBanHSPO/gqlgen) is a Go library for building GraphQL servers without any fuss. gqlgen is:
+[gqlgen](https://github.com/vndocker/encrypted-graphql) is a Go library for building GraphQL servers without any fuss. gqlgen is:
 
 - **Schema first** — Define your API using the GraphQL [Schema Definition Language](http://graphql.org/learn/schema/).
 - **Type safe** — You should never see `map[string]interface{}` here.
@@ -14,15 +14,15 @@
 
 First work your way through the [Getting Started](https://gqlgen.com/getting-started/) tutorial.
 
-If you can't find what your looking for, look at our [examples](https://github.com/LaBanHSPO/gqlgen/tree/master/example) for example usage of gqlgen, or visit [godoc](https://godoc.org/github.com/LaBanHSPO/gqlgen).
+If you can't find what your looking for, look at our [examples](https://github.com/vndocker/encrypted-graphql/tree/master/example) for example usage of gqlgen, or visit [godoc](https://godoc.org/github.com/vndocker/encrypted-graphql).
 
 ## Reporting Issues
 
-If you think you've found a bug, or something isn't behaving the way you think it should, please raise an [issue](https://github.com/LaBanHSPO/gqlgen/issues) on GitHub.
+If you think you've found a bug, or something isn't behaving the way you think it should, please raise an [issue](https://github.com/vndocker/encrypted-graphql/issues) on GitHub.
 
 ## Contributing
 
-Read our [Contribution Guidelines](https://github.com/LaBanHSPO/gqlgen/blob/master/CONTRIBUTING.md) for information on how you can help out gqlgen.
+Read our [Contribution Guidelines](https://github.com/vndocker/encrypted-graphql/blob/master/CONTRIBUTING.md) for information on how you can help out gqlgen.
 
 ## Frequently asked questions
 
@@ -90,8 +90,8 @@ You can by remapping it in config:
 models:
   ID: # The GraphQL type ID is backed by
     model:
-      - github.com/LaBanHSPO/gqlgen/graphql.IntID # An go integer
-      - github.com/LaBanHSPO/gqlgen/graphql.ID # or a go string
+      - github.com/vndocker/encrypted-graphql/graphql.IntID # An go integer
+      - github.com/vndocker/encrypted-graphql/graphql.ID # or a go string
 ```
 
 This means gqlgen will be able to automatically bind to strings or ints for models you have written yourself, but the

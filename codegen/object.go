@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2/ast"
 )

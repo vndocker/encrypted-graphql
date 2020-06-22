@@ -3,10 +3,10 @@ package starwars
 import (
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/client"
-	"github.com/LaBanHSPO/gqlgen/example/starwars/generated"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/introspection"
+	"github.com/vndocker/encrypted-graphql/client"
+	"github.com/vndocker/encrypted-graphql/example/starwars/generated"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/introspection"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 )
 
 func EnumLogging(ctx context.Context, obj interface{}, next graphql.Resolver) (res interface{}, err error) {

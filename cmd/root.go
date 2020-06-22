@@ -6,12 +6,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 	"github.com/urfave/cli/v2"
 
 	// Required since otherwise dep will prune away these unused packages before codegen has a chance to run
-	_ "github.com/LaBanHSPO/gqlgen/graphql/handler"
-	_ "github.com/LaBanHSPO/gqlgen/handler"
+	_ "github.com/vndocker/encrypted-graphql/graphql/handler"
+	_ "github.com/vndocker/encrypted-graphql/handler"
 )
 
 func Execute() {

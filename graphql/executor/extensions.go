@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 )
 
 // Use adds the given extension to this Executor.

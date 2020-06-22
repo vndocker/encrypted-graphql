@@ -141,7 +141,7 @@ That invokes the following operation:
 }
 ```
 
-See the [example/fileupload](https://github.com/LaBanHSPO/gqlgen/tree/master/example/fileupload) package for more examples.
+See the [example/fileupload](https://github.com/vndocker/encrypted-graphql/tree/master/example/fileupload) package for more examples.
 
 # Usage with Apollo
 

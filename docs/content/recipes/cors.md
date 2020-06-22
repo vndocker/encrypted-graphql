@@ -17,9 +17,9 @@ package main
 import (
     "net/http"
 
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
-    "github.com/LaBanHSPO/gqlgen/example/starwars"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/transport"
+    "github.com/vndocker/encrypted-graphql/example/starwars"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
 	"github.com/go-chi/chi"
 	"github.com/rs/cors"
 )

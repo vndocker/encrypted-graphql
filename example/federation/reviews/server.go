@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/example/federation/reviews/graph"
-	"github.com/LaBanHSPO/gqlgen/example/federation/reviews/graph/generated"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/debug"
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/example/federation/reviews/graph"
+	"github.com/vndocker/encrypted-graphql/example/federation/reviews/graph/generated"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/debug"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 )
 
 const defaultPort = "4003"

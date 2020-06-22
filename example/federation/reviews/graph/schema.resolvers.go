@@ -6,8 +6,8 @@ package graph
 import (
 	"context"
 
-	"github.com/LaBanHSPO/gqlgen/example/federation/reviews/graph/generated"
-	"github.com/LaBanHSPO/gqlgen/example/federation/reviews/graph/model"
+	"github.com/vndocker/encrypted-graphql/example/federation/reviews/graph/generated"
+	"github.com/vndocker/encrypted-graphql/example/federation/reviews/graph/model"
 )
 
 func (r *productResolver) Reviews(ctx context.Context, obj *model.Product) ([]*model.Review, error) {

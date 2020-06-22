@@ -5,7 +5,7 @@ import (
 	"mime"
 	"net/http"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 )
 
 // POST implements the POST side of the default HTTP transport

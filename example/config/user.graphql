@@ -1,5 +1,5 @@
 type User
-@goModel(model:"github.com/LaBanHSPO/gqlgen/example/config.User") {
+@goModel(model:"github.com/vndocker/encrypted-graphql/example/config.User") {
   id: ID!
   name: String! @goField(name:"FullName")
 }

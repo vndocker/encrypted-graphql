@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
 	"github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )

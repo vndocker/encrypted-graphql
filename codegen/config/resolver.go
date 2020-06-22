@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/LaBanHSPO/gqlgen/internal/code"
+	"github.com/vndocker/encrypted-graphql/internal/code"
 )
 
 type ResolverConfig struct {

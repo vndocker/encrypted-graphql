@@ -11,7 +11,7 @@ import (
 	"github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 
-	"github.com/LaBanHSPO/gqlgen/internal/code"
+	"github.com/vndocker/encrypted-graphql/internal/code"
 )
 
 func TestLoadConfig(t *testing.T) {
@@ -113,7 +113,7 @@ func TestConfigCheck(t *testing.T) {
 			Model: PackageConfig{Filename: "generated/models.go"},
 		}
 
-		require.EqualError(t, config.check(), "exec and model define the same import path (github.com/LaBanHSPO/gqlgen/codegen/config/generated) with different package names (graphql vs generated)")
+		require.EqualError(t, config.check(), "exec and model define the same import path (github.com/vndocker/encrypted-graphql/codegen/config/generated) with different package names (graphql vs generated)")
 	})
 
 	t.Run("federation must be in exec package", func(t *testing.T) {
@@ -131,7 +131,7 @@ func TestConfigCheck(t *testing.T) {
 			Federation: PackageConfig{Filename: "generated/federation.go", Package: "federation"},
 		}
 
-		require.EqualError(t, config.check(), "exec and federation define the same import path (github.com/LaBanHSPO/gqlgen/codegen/config/generated) with different package names (generated vs federation)")
+		require.EqualError(t, config.check(), "exec and federation define the same import path (github.com/vndocker/encrypted-graphql/codegen/config/generated) with different package names (generated vs federation)")
 	})
 
 	t.Run("deprecated federated flag raises an error", func(t *testing.T) {
@@ -149,8 +149,8 @@ func TestAutobinding(t *testing.T) {
 		cfg := Config{
 			Models: TypeMap{},
 			AutoBind: []string{
-				"github.com/LaBanHSPO/gqlgen/example/chat",
-				"github.com/LaBanHSPO/gqlgen/example/scalars/model",
+				"github.com/vndocker/encrypted-graphql/example/chat",
+				"github.com/vndocker/encrypted-graphql/example/scalars/model",
 			},
 			Packages: &code.Packages{},
 		}
@@ -162,8 +162,8 @@ func TestAutobinding(t *testing.T) {
 
 		require.NoError(t, cfg.autobind())
 
-		require.Equal(t, "github.com/LaBanHSPO/gqlgen/example/scalars/model.Banned", cfg.Models["Banned"].Model[0])
-		require.Equal(t, "github.com/LaBanHSPO/gqlgen/example/chat.Message", cfg.Models["Message"].Model[0])
+		require.Equal(t, "github.com/vndocker/encrypted-graphql/example/scalars/model.Banned", cfg.Models["Banned"].Model[0])
+		require.Equal(t, "github.com/vndocker/encrypted-graphql/example/chat.Message", cfg.Models["Message"].Model[0])
 	})
 
 	t.Run("with file path", func(t *testing.T) {

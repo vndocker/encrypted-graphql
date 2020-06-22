@@ -5,8 +5,8 @@ import (
 	"go/token"
 	"go/types"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
-	"github.com/LaBanHSPO/gqlgen/internal/code"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/internal/code"
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2/ast"
 )

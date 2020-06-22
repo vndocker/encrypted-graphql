@@ -23,9 +23,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/api"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/plugin/stubgen"
+	"github.com/vndocker/encrypted-graphql/api"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/plugin/stubgen"
 )
 
 func main() {
@@ -53,9 +53,9 @@ There are currently only two hooks:
 
 - MutateConfig: Allows a plugin to mutate the config before codegen starts. This allows plugins to add
   custom directives, define types, and implement resolvers. see
-  [modelgen](https://github.com/LaBanHSPO/gqlgen/tree/master/plugin/modelgen) for an example
+  [modelgen](https://github.com/vndocker/encrypted-graphql/tree/master/plugin/modelgen) for an example
 - GenerateCode: Allows a plugin to generate a new output file, see
-  [stubgen](https://github.com/LaBanHSPO/gqlgen/tree/master/plugin/stubgen) for an example
+  [stubgen](https://github.com/vndocker/encrypted-graphql/tree/master/plugin/stubgen) for an example
 
-Take a look at [plugin.go](https://github.com/LaBanHSPO/gqlgen/blob/master/plugin/plugin.go) for the full list of
+Take a look at [plugin.go](https://github.com/vndocker/encrypted-graphql/blob/master/plugin/plugin.go) for the full list of
 available hooks. These are likely to change with each release.

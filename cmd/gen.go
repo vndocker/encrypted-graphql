@@ -3,8 +3,8 @@ package cmd
 import (
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/api"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/vndocker/encrypted-graphql/api"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli/v2"
 )

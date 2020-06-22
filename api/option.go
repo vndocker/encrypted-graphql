@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/plugin"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/plugin"
 )
 
 type Option func(cfg *config.Config, plugins *[]plugin.Plugin)

@@ -4,7 +4,7 @@ model:
   filename: models/generated.go
 
 autobind:
-  - github.com/LaBanHSPO/gqlgen/example/starwars/models
+  - github.com/vndocker/encrypted-graphql/example/starwars/models
 
 models:
   ReviewInput:

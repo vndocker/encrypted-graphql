@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/lru"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/extension"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/lru"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/transport"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 	"github.com/gorilla/websocket"
 )
 

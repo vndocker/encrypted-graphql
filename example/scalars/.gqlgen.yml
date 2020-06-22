@@ -3,16 +3,16 @@ model:
 
 models:
   User:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.User
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.User
   Timestamp:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.Timestamp
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.Timestamp
   SearchArgs:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.SearchArgs
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.SearchArgs
   Point:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.Point
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.Point
   ID:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.ID
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.ID
   Tier:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.Tier
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.Tier
   Banned:
-    model: github.com/LaBanHSPO/gqlgen/example/scalars/model.Banned
+    model: github.com/vndocker/encrypted-graphql/example/scalars/model.Banned

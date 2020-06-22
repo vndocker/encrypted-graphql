@@ -12,11 +12,11 @@ resolver:
 
 models:
   Element:
-    model: github.com/LaBanHSPO/gqlgen/integration/models-go.Element
+    model: github.com/vndocker/encrypted-graphql/integration/models-go.Element
   Viewer:
-    model: github.com/LaBanHSPO/gqlgen/integration/models-go.Viewer
+    model: github.com/vndocker/encrypted-graphql/integration/models-go.Viewer
   User:
-    model: github.com/LaBanHSPO/gqlgen/integration/remote_api.User
+    model: github.com/vndocker/encrypted-graphql/integration/remote_api.User
     fields:
       likes:
         resolver: true

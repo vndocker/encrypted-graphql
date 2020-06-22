@@ -6,8 +6,8 @@ package graph
 import (
 	"context"
 
-	"github.com/LaBanHSPO/gqlgen/example/federation/accounts/graph/generated"
-	"github.com/LaBanHSPO/gqlgen/example/federation/accounts/graph/model"
+	"github.com/vndocker/encrypted-graphql/example/federation/accounts/graph/generated"
+	"github.com/vndocker/encrypted-graphql/example/federation/accounts/graph/model"
 )
 
 func (r *entityResolver) FindUserByID(ctx context.Context, id string) (*model.User, error) {

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/plugin/modelgen/out"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/plugin/modelgen/out"
 	"github.com/stretchr/testify/require"
 )
 

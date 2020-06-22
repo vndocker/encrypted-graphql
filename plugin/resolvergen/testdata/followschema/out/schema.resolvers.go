@@ -6,7 +6,7 @@ package customresolver
 import (
 	"context"
 
-	customresolver "github.com/LaBanHSPO/gqlgen/plugin/resolvergen/testdata/singlefile/out"
+	customresolver "github.com/vndocker/encrypted-graphql/plugin/resolvergen/testdata/singlefile/out"
 )
 
 func (r *queryCustomResolverType) Resolver(ctx context.Context) (*customresolver.Resolver, error) {

@@ -14,14 +14,14 @@ func TestImportPathForDir(t *testing.T) {
 	wd, err := os.Getwd()
 	require.NoError(t, err)
 
-	assert.Equal(t, "github.com/LaBanHSPO/gqlgen/internal/code", ImportPathForDir(wd))
-	assert.Equal(t, "github.com/LaBanHSPO/gqlgen/api", ImportPathForDir(filepath.Join(wd, "..", "..", "api")))
+	assert.Equal(t, "github.com/vndocker/encrypted-graphql/internal/code", ImportPathForDir(wd))
+	assert.Equal(t, "github.com/vndocker/encrypted-graphql/api", ImportPathForDir(filepath.Join(wd, "..", "..", "api")))
 
 	// doesnt contain go code, but should still give a valid import path
-	assert.Equal(t, "github.com/LaBanHSPO/gqlgen/docs", ImportPathForDir(filepath.Join(wd, "..", "..", "docs")))
+	assert.Equal(t, "github.com/vndocker/encrypted-graphql/docs", ImportPathForDir(filepath.Join(wd, "..", "..", "docs")))
 
 	// directory does not exist
-	assert.Equal(t, "github.com/LaBanHSPO/gqlgen/dos", ImportPathForDir(filepath.Join(wd, "..", "..", "dos")))
+	assert.Equal(t, "github.com/vndocker/encrypted-graphql/dos", ImportPathForDir(filepath.Join(wd, "..", "..", "dos")))
 
 	if runtime.GOOS == "windows" {
 		assert.Equal(t, "", ImportPathForDir("C:/doesnotexist"))

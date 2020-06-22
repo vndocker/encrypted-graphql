@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	models "github.com/LaBanHSPO/gqlgen/integration/models-go"
-	"github.com/LaBanHSPO/gqlgen/integration/remote_api"
+	models "github.com/vndocker/encrypted-graphql/integration/models-go"
+	"github.com/vndocker/encrypted-graphql/integration/remote_api"
 )
 
 type CustomError struct {

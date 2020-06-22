@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/api"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/plugin/modelgen"
+	"github.com/vndocker/encrypted-graphql/api"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/plugin/modelgen"
 )
 
 // Defining mutation function

@@ -7,10 +7,10 @@ import (
 
 	"github.com/vektah/gqlparser/v2/ast"
 
-	"github.com/LaBanHSPO/gqlgen/codegen"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
-	"github.com/LaBanHSPO/gqlgen/plugin"
+	"github.com/vndocker/encrypted-graphql/codegen"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/plugin"
 )
 
 type federation struct {
@@ -33,21 +33,21 @@ func (f *federation) MutateConfig(cfg *config.Config) error {
 	builtins := config.TypeMap{
 		"_Service": {
 			Model: config.StringList{
-				"github.com/LaBanHSPO/gqlgen/plugin/federation/fedruntime.Service",
+				"github.com/vndocker/encrypted-graphql/plugin/federation/fedruntime.Service",
 			},
 		},
 		"_Entity": {
 			Model: config.StringList{
-				"github.com/LaBanHSPO/gqlgen/plugin/federation/fedruntime.Entity",
+				"github.com/vndocker/encrypted-graphql/plugin/federation/fedruntime.Entity",
 			},
 		},
 		"Entity": {
 			Model: config.StringList{
-				"github.com/LaBanHSPO/gqlgen/plugin/federation/fedruntime.Entity",
+				"github.com/vndocker/encrypted-graphql/plugin/federation/fedruntime.Entity",
 			},
 		},
 		"_Any": {
-			Model: config.StringList{"github.com/LaBanHSPO/gqlgen/graphql.Map"},
+			Model: config.StringList{"github.com/vndocker/encrypted-graphql/graphql.Map"},
 		},
 	}
 	for typeName, entry := range builtins {

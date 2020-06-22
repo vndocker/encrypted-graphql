@@ -3,7 +3,7 @@ package lru
 import (
 	"context"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 	lru "github.com/hashicorp/golang-lru"
 )
 

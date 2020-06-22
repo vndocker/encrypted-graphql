@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/example/starwars/generated"
+	"github.com/vndocker/encrypted-graphql/example/starwars/generated"
 
-	"github.com/LaBanHSPO/gqlgen/example/starwars/models"
+	"github.com/vndocker/encrypted-graphql/example/starwars/models"
 )
 
 type Resolver struct {

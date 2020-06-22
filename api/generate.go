@@ -3,12 +3,12 @@ package api
 import (
 	"syscall"
 
-	"github.com/LaBanHSPO/gqlgen/codegen"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/plugin"
-	"github.com/LaBanHSPO/gqlgen/plugin/federation"
-	"github.com/LaBanHSPO/gqlgen/plugin/modelgen"
-	"github.com/LaBanHSPO/gqlgen/plugin/resolvergen"
+	"github.com/vndocker/encrypted-graphql/codegen"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/plugin"
+	"github.com/vndocker/encrypted-graphql/plugin/federation"
+	"github.com/vndocker/encrypted-graphql/plugin/modelgen"
+	"github.com/vndocker/encrypted-graphql/plugin/resolvergen"
 	"github.com/pkg/errors"
 )
 

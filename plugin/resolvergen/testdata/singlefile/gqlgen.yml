@@ -11,4 +11,4 @@ resolver:
 
 models:
   Resolver:
-    model: github.com/LaBanHSPO/gqlgen/plugin/resolvergen/testdata/singlefile/out.Resolver
+    model: github.com/vndocker/encrypted-graphql/plugin/resolvergen/testdata/singlefile/out.Resolver

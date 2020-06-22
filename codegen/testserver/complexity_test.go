@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/client"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
+	"github.com/vndocker/encrypted-graphql/client"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/extension"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/LaBanHSPO/gqlgen/example/scalars"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/example/scalars"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 )
 
 func main() {

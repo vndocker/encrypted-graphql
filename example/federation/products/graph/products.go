@@ -1,6 +1,6 @@
 package graph
 
-import "github.com/LaBanHSPO/gqlgen/example/federation/products/graph/model"
+import "github.com/vndocker/encrypted-graphql/example/federation/products/graph/model"
 
 var hats = []*model.Product{
 	{

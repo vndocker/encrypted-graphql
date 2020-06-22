@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/testserver"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
+	"github.com/vndocker/encrypted-graphql/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/extension"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/testserver"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/transport"
 	"github.com/stretchr/testify/require"
 )
 

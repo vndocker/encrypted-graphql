@@ -5,9 +5,9 @@ import (
 	"go/types"
 	"sort"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
-	"github.com/LaBanHSPO/gqlgen/plugin"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/plugin"
 	"github.com/vektah/gqlparser/v2/ast"
 )
 
@@ -203,7 +203,7 @@ func (m *Plugin) MutateConfig(cfg *config.Config) error {
 		cfg.Models.Add(it.Name, cfg.Model.ImportPath()+"."+templates.ToGo(it.Name))
 	}
 	for _, it := range b.Scalars {
-		cfg.Models.Add(it, "github.com/LaBanHSPO/gqlgen/graphql.String")
+		cfg.Models.Add(it, "github.com/vndocker/encrypted-graphql/graphql.String")
 	}
 
 	if len(b.Models) == 0 && len(b.Enums) == 0 && len(b.Interfaces) == 0 && len(b.Scalars) == 0 {

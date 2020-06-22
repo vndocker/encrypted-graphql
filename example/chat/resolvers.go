@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 )
 
 type resolver struct {

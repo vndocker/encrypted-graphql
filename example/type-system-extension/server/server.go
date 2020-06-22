@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 
-	extension "github.com/LaBanHSPO/gqlgen/example/type-system-extension"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	extension "github.com/vndocker/encrypted-graphql/example/type-system-extension"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
 )
 
 const defaultPort = "8080"

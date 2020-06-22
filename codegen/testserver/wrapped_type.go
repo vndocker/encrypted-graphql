@@ -1,6 +1,6 @@
 package testserver
 
-import "github.com/LaBanHSPO/gqlgen/codegen/testserver/otherpkg"
+import "github.com/vndocker/encrypted-graphql/codegen/testserver/otherpkg"
 
 type WrappedScalar otherpkg.Scalar
 type WrappedStruct otherpkg.Struct

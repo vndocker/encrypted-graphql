@@ -3,7 +3,7 @@ package transport
 import (
 	"net/http"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 )
 
 // Options responds to http OPTIONS and HEAD requests

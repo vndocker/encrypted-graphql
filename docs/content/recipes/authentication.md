@@ -77,9 +77,9 @@ package main
 import (
 	"net/http"
 
-	"github.com/LaBanHSPO/gqlgen/example/starwars"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/example/starwars"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
 	"github.com/go-chi/chi"
 )
 

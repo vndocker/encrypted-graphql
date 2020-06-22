@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/codegen"
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
-	"github.com/LaBanHSPO/gqlgen/plugin"
+	"github.com/vndocker/encrypted-graphql/codegen"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/plugin"
 	"github.com/pkg/errors"
 )
 

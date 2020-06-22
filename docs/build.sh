@@ -44,7 +44,7 @@ rebuild() {
 currentBranch=$(git rev-parse --abbrev-ref HEAD)
 
 if ! git remote  | grep -q origin ; then
-    git remote add origin https://github.com/LaBanHSPO/gqlgen
+    git remote add origin https://github.com/vndocker/encrypted-graphql
 fi
 git fetch origin --tags
 

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/client"
-	"github.com/LaBanHSPO/gqlgen/graphql"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/client"
+	"github.com/vndocker/encrypted-graphql/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
 	"github.com/stretchr/testify/require"
 )
 

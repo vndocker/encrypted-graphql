@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/LaBanHSPO/gqlgen/client"
+	"github.com/vndocker/encrypted-graphql/client"
 	"github.com/stretchr/testify/require"
 )
 

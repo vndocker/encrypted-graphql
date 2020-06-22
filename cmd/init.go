@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/LaBanHSPO/gqlgen/api"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/internal/code"
-	"github.com/LaBanHSPO/gqlgen/plugin/servergen"
+	"github.com/vndocker/encrypted-graphql/api"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/internal/code"
+	"github.com/vndocker/encrypted-graphql/plugin/servergen"
 	"github.com/urfave/cli/v2"
 )
 
@@ -64,15 +64,15 @@ autobind:
 models:
   ID:
     model:
-      - github.com/LaBanHSPO/gqlgen/graphql.ID
-      - github.com/LaBanHSPO/gqlgen/graphql.Int
-      - github.com/LaBanHSPO/gqlgen/graphql.Int64
-      - github.com/LaBanHSPO/gqlgen/graphql.Int32
+      - github.com/vndocker/encrypted-graphql/graphql.ID
+      - github.com/vndocker/encrypted-graphql/graphql.Int
+      - github.com/vndocker/encrypted-graphql/graphql.Int64
+      - github.com/vndocker/encrypted-graphql/graphql.Int32
   Int:
     model:
-      - github.com/LaBanHSPO/gqlgen/graphql.Int
-      - github.com/LaBanHSPO/gqlgen/graphql.Int64
-      - github.com/LaBanHSPO/gqlgen/graphql.Int32
+      - github.com/vndocker/encrypted-graphql/graphql.Int
+      - github.com/vndocker/encrypted-graphql/graphql.Int64
+      - github.com/vndocker/encrypted-graphql/graphql.Int32
 `))
 
 var schemaDefault = `# GraphQL schema example

@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/LaBanHSPO/gqlgen/internal/code"
+	"github.com/vndocker/encrypted-graphql/internal/code"
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
@@ -178,8 +178,8 @@ func (c *Config) Init() error {
 
 	// prefetch all packages in one big packages.Load call
 	pkgs := []string{
-		"github.com/LaBanHSPO/gqlgen/graphql",
-		"github.com/LaBanHSPO/gqlgen/graphql/introspection",
+		"github.com/vndocker/encrypted-graphql/graphql",
+		"github.com/vndocker/encrypted-graphql/graphql/introspection",
 	}
 	pkgs = append(pkgs, c.Models.ReferencedPackages()...)
 	pkgs = append(pkgs, c.AutoBind...)
@@ -527,26 +527,26 @@ func (c *Config) autobind() error {
 
 func (c *Config) injectBuiltins() {
 	builtins := TypeMap{
-		"__Directive":         {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql/introspection.Directive"}},
-		"__DirectiveLocation": {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.String"}},
-		"__Type":              {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql/introspection.Type"}},
-		"__TypeKind":          {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.String"}},
-		"__Field":             {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql/introspection.Field"}},
-		"__EnumValue":         {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql/introspection.EnumValue"}},
-		"__InputValue":        {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql/introspection.InputValue"}},
-		"__Schema":            {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql/introspection.Schema"}},
-		"Float":               {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.Float"}},
-		"String":              {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.String"}},
-		"Boolean":             {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.Boolean"}},
+		"__Directive":         {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql/introspection.Directive"}},
+		"__DirectiveLocation": {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.String"}},
+		"__Type":              {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql/introspection.Type"}},
+		"__TypeKind":          {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.String"}},
+		"__Field":             {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql/introspection.Field"}},
+		"__EnumValue":         {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql/introspection.EnumValue"}},
+		"__InputValue":        {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql/introspection.InputValue"}},
+		"__Schema":            {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql/introspection.Schema"}},
+		"Float":               {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.Float"}},
+		"String":              {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.String"}},
+		"Boolean":             {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.Boolean"}},
 		"Int": {Model: StringList{
-			"github.com/LaBanHSPO/gqlgen/graphql.Int",
-			"github.com/LaBanHSPO/gqlgen/graphql.Int32",
-			"github.com/LaBanHSPO/gqlgen/graphql.Int64",
+			"github.com/vndocker/encrypted-graphql/graphql.Int",
+			"github.com/vndocker/encrypted-graphql/graphql.Int32",
+			"github.com/vndocker/encrypted-graphql/graphql.Int64",
 		}},
 		"ID": {
 			Model: StringList{
-				"github.com/LaBanHSPO/gqlgen/graphql.ID",
-				"github.com/LaBanHSPO/gqlgen/graphql.IntID",
+				"github.com/vndocker/encrypted-graphql/graphql.ID",
+				"github.com/vndocker/encrypted-graphql/graphql.IntID",
 			},
 		},
 	}
@@ -559,10 +559,10 @@ func (c *Config) injectBuiltins() {
 
 	// These are additional types that are injected if defined in the schema as scalars.
 	extraBuiltins := TypeMap{
-		"Time":   {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.Time"}},
-		"Map":    {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.Map"}},
-		"Upload": {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.Upload"}},
-		"Any":    {Model: StringList{"github.com/LaBanHSPO/gqlgen/graphql.Any"}},
+		"Time":   {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.Time"}},
+		"Map":    {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.Map"}},
+		"Upload": {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.Upload"}},
+		"Any":    {Model: StringList{"github.com/vndocker/encrypted-graphql/graphql.Any"}},
 	}
 
 	for typeName, entry := range extraBuiltins {

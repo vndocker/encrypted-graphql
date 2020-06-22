@@ -1,6 +1,6 @@
-//go:generate go run github.com/vektah/dataloaden AddressLoader int *github.com/LaBanHSPO/gqlgen/example/dataloader.Address
-//go:generate go run github.com/vektah/dataloaden OrderSliceLoader int []*github.com/LaBanHSPO/gqlgen/example/dataloader.Order
-//go:generate go run github.com/vektah/dataloaden ItemSliceLoader int []*github.com/LaBanHSPO/gqlgen/example/dataloader.Item
+//go:generate go run github.com/vektah/dataloaden AddressLoader int *github.com/vndocker/encrypted-graphql/example/dataloader.Address
+//go:generate go run github.com/vektah/dataloaden OrderSliceLoader int []*github.com/vndocker/encrypted-graphql/example/dataloader.Order
+//go:generate go run github.com/vektah/dataloaden ItemSliceLoader int []*github.com/vndocker/encrypted-graphql/example/dataloader.Item
 
 package dataloader
 

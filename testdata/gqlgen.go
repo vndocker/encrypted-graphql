@@ -8,11 +8,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql"
 
-	"github.com/LaBanHSPO/gqlgen/api"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/plugin/stubgen"
+	"github.com/vndocker/encrypted-graphql/api"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/plugin/stubgen"
 )
 
 func main() {

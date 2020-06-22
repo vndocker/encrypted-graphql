@@ -1,4 +1,4 @@
-module github.com/LaBanHSPO/gqlgen
+module github.com/vndocker/encrypted-graphql
 
 go 1.12
 

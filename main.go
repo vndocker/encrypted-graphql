@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/LaBanHSPO/gqlgen/cmd"
+	"github.com/vndocker/encrypted-graphql/cmd"
 )
 
 func main() {

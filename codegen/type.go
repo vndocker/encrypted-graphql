@@ -3,7 +3,7 @@ package codegen
 import (
 	"fmt"
 
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
 )
 
 func (b *builder) buildTypes() map[string]*config.TypeReference {

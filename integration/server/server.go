@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
+	"github.com/vndocker/encrypted-graphql/graphql/handler/extension"
 
-	"github.com/LaBanHSPO/gqlgen/graphql"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
-	"github.com/LaBanHSPO/gqlgen/graphql/playground"
-	"github.com/LaBanHSPO/gqlgen/integration"
+	"github.com/vndocker/encrypted-graphql/graphql"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/graphql/playground"
+	"github.com/vndocker/encrypted-graphql/integration"
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2/gqlerror"
 )

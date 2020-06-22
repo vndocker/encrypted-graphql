@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/LaBanHSPO/gqlgen/codegen"
-	"github.com/LaBanHSPO/gqlgen/codegen/config"
-	"github.com/LaBanHSPO/gqlgen/codegen/templates"
-	"github.com/LaBanHSPO/gqlgen/internal/rewrite"
-	"github.com/LaBanHSPO/gqlgen/plugin"
+	"github.com/vndocker/encrypted-graphql/codegen"
+	"github.com/vndocker/encrypted-graphql/codegen/config"
+	"github.com/vndocker/encrypted-graphql/codegen/templates"
+	"github.com/vndocker/encrypted-graphql/internal/rewrite"
+	"github.com/vndocker/encrypted-graphql/plugin"
 	"github.com/pkg/errors"
 )
 

@@ -1,4 +1,4 @@
-# regression test for https://github.com/LaBanHSPO/gqlgen/issues/583
+# regression test for https://github.com/vndocker/encrypted-graphql/issues/583
 
 type asdfIt { id: ID! }
 type iIt { id: ID! }

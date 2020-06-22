@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/LaBanHSPO/gqlgen/client"
-	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/vndocker/encrypted-graphql/client"
+	"github.com/vndocker/encrypted-graphql/graphql/handler"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

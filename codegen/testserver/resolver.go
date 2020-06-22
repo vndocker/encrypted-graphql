@@ -5,8 +5,8 @@ package testserver
 import (
 	"context"
 
-	introspection1 "github.com/LaBanHSPO/gqlgen/codegen/testserver/introspection"
-	invalid_packagename "github.com/LaBanHSPO/gqlgen/codegen/testserver/invalid-packagename"
+	introspection1 "github.com/vndocker/encrypted-graphql/codegen/testserver/introspection"
+	invalid_packagename "github.com/vndocker/encrypted-graphql/codegen/testserver/invalid-packagename"
 )
 
 type Resolver struct{}
