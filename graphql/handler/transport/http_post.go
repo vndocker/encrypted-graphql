@@ -47,7 +47,16 @@ func (h POST) Do(w http.ResponseWriter, r *http.Request, exec graphql.GraphExecu
 
 	fmt.Printf("Content Input Transport: %v", r.Body)
 
-	if err := jsonDecode(r.Body, &params); err != nil {
+	//get private key
+	//priv, err := pki.GetPrivateKey()
+	//if err != nil {
+	//	log.Fatalf("Error: %s\n", err)
+	//}
+	//
+	//decrypted := pki.Decrypt(requestBody.CONTENT, priv)
+	//fmt.Printf("decrypted: %s:: \n", decrypted)
+
+	if err := jsonDecode(r.Body, &params); err != nil { // r.Body = ShouldDecryptedString
 		w.WriteHeader(http.StatusBadRequest)
 		writeJsonErrorf(w, "json body could not be decoded: "+err.Error())
 		return
@@ -71,5 +80,8 @@ func (h POST) Do(w http.ResponseWriter, r *http.Request, exec graphql.GraphExecu
 	}
 	ctx := graphql.WithOperationContext(r.Context(), rc)
 	responses, ctx := exec.DispatchOperation(ctx, rc)
+
+	fmt.Printf("Output: responses: %v", responses)
+
 	writeJson(w, responses(ctx))
 }
