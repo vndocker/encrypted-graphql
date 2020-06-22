@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/99designs/gqlgen/graphql"
+	"github.com/LaBanHSPO/gqlgen/graphql"
 	"github.com/stretchr/testify/require"
 )
 

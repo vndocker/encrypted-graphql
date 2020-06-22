@@ -3,8 +3,8 @@ package cmd
 import (
 	"os"
 
-	"github.com/99designs/gqlgen/api"
-	"github.com/99designs/gqlgen/codegen/config"
+	"github.com/LaBanHSPO/gqlgen/api"
+	"github.com/LaBanHSPO/gqlgen/codegen/config"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli/v2"
 )

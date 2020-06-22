@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/99designs/gqlgen/internal/code"
+	"github.com/LaBanHSPO/gqlgen/internal/code"
 
 	"github.com/stretchr/testify/require"
 )

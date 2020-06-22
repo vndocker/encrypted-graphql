@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/99designs/gqlgen/plugin/modelgen/out"
+	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/LaBanHSPO/gqlgen/plugin/modelgen/out"
 	"github.com/stretchr/testify/require"
 )
 

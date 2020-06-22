@@ -1,10 +1,11 @@
 package transport
 
 import (
+	"fmt"
 	"mime"
 	"net/http"
 
-	"github.com/99designs/gqlgen/graphql"
+	"github.com/LaBanHSPO/gqlgen/graphql"
 )
 
 // POST implements the POST side of the default HTTP transport
@@ -23,25 +24,45 @@ func (h POST) Supports(r *http.Request) bool {
 		return false
 	}
 
-	return r.Method == "POST" && mediaType == "application/json"
+	supportedJson := r.Method == "POST" && mediaType == "application/json"
+
+	encryptWith := r.Header.Get("X-Encrypted-With")
+
+	if encryptWith == "RSA" && supportedJson {
+		return true
+	}
+	if encryptWith != "" && supportedJson {
+		return false
+	}
+
+	return supportedJson
 }
+
 
 func (h POST) Do(w http.ResponseWriter, r *http.Request, exec graphql.GraphExecutor) {
 	w.Header().Set("Content-Type", "application/json")
 
 	var params *graphql.RawParams
 	start := graphql.Now()
+
+	fmt.Printf("Content Input Transport: %v", r.Body)
+
 	if err := jsonDecode(r.Body, &params); err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		writeJsonErrorf(w, "json body could not be decoded: "+err.Error())
 		return
 	}
+
+
 	params.ReadTime = graphql.TraceTiming{
 		Start: start,
 		End:   graphql.Now(),
 	}
 
 	rc, err := exec.CreateOperationContext(r.Context(), params)
+
+	fmt.Printf("Prepare output: Params: %v, RC: %v", params, rc)
+
 	if err != nil {
 		w.WriteHeader(statusFor(err))
 		resp := exec.DispatchError(graphql.WithOperationContext(r.Context(), rc), err)

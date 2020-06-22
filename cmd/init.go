@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/99designs/gqlgen/api"
-	"github.com/99designs/gqlgen/codegen/config"
-	"github.com/99designs/gqlgen/internal/code"
-	"github.com/99designs/gqlgen/plugin/servergen"
+	"github.com/LaBanHSPO/gqlgen/api"
+	"github.com/LaBanHSPO/gqlgen/codegen/config"
+	"github.com/LaBanHSPO/gqlgen/internal/code"
+	"github.com/LaBanHSPO/gqlgen/plugin/servergen"
 	"github.com/urfave/cli/v2"
 )
 
@@ -64,15 +64,15 @@ autobind:
 models:
   ID:
     model:
-      - github.com/99designs/gqlgen/graphql.ID
-      - github.com/99designs/gqlgen/graphql.Int
-      - github.com/99designs/gqlgen/graphql.Int64
-      - github.com/99designs/gqlgen/graphql.Int32
+      - github.com/LaBanHSPO/gqlgen/graphql.ID
+      - github.com/LaBanHSPO/gqlgen/graphql.Int
+      - github.com/LaBanHSPO/gqlgen/graphql.Int64
+      - github.com/LaBanHSPO/gqlgen/graphql.Int32
   Int:
     model:
-      - github.com/99designs/gqlgen/graphql.Int
-      - github.com/99designs/gqlgen/graphql.Int64
-      - github.com/99designs/gqlgen/graphql.Int32
+      - github.com/LaBanHSPO/gqlgen/graphql.Int
+      - github.com/LaBanHSPO/gqlgen/graphql.Int64
+      - github.com/LaBanHSPO/gqlgen/graphql.Int32
 `))
 
 var schemaDefault = `# GraphQL schema example

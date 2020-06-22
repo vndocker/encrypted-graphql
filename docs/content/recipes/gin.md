@@ -22,8 +22,8 @@ In your router file, define the handlers for the GraphQL and Playground endpoint
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/LaBanHSPO/gqlgen/graphql/playground"
 )
 
 // Defining the Graphql handler

@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/handler/extension"
-	"github.com/99designs/gqlgen/graphql/handler/lru"
-	"github.com/99designs/gqlgen/graphql/handler/transport"
-	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler/lru"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
+	"github.com/LaBanHSPO/gqlgen/graphql/playground"
 	"github.com/gorilla/websocket"
 )
 
@@ -31,12 +31,12 @@ func GraphQL(exec graphql.ExecutableSchema, options ...Option) http.HandlerFunc 
 		KeepAlivePingInterval: cfg.connectionKeepAlivePingInterval,
 	})
 	srv.AddTransport(transport.Options{})
-	srv.AddTransport(transport.GET{})
+	//srv.AddTransport(transport.GET{})
 	srv.AddTransport(transport.POST{})
-	srv.AddTransport(transport.MultipartForm{
-		MaxUploadSize: cfg.uploadMaxSize,
-		MaxMemory:     cfg.uploadMaxMemory,
-	})
+	//srv.AddTransport(transport.MultipartForm{
+	//	MaxUploadSize: cfg.uploadMaxSize,
+	//	MaxMemory:     cfg.uploadMaxMemory,
+	//})
 
 	if cfg.cacheSize != 0 {
 		srv.SetQueryCache(lru.New(cfg.cacheSize))

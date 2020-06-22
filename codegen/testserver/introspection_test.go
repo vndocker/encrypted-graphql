@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/99designs/gqlgen/client"
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/handler/transport"
-	"github.com/99designs/gqlgen/graphql/introspection"
+	"github.com/LaBanHSPO/gqlgen/client"
+	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler/transport"
+	"github.com/LaBanHSPO/gqlgen/graphql/introspection"
 	"github.com/stretchr/testify/require"
 )
 

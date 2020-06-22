@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/99designs/gqlgen/graphql/handler/extension"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler/extension"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/graphql/handler"
-	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/99designs/gqlgen/integration"
+	"github.com/LaBanHSPO/gqlgen/graphql"
+	"github.com/LaBanHSPO/gqlgen/graphql/handler"
+	"github.com/LaBanHSPO/gqlgen/graphql/playground"
+	"github.com/LaBanHSPO/gqlgen/integration"
 	"github.com/pkg/errors"
 	"github.com/vektah/gqlparser/v2/gqlerror"
 )

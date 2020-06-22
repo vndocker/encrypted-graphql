@@ -3,8 +3,8 @@
 package plugin
 
 import (
-	"github.com/99designs/gqlgen/codegen"
-	"github.com/99designs/gqlgen/codegen/config"
+	"github.com/LaBanHSPO/gqlgen/codegen"
+	"github.com/LaBanHSPO/gqlgen/codegen/config"
 	"github.com/vektah/gqlparser/v2/ast"
 )
 

@@ -14,5 +14,5 @@ menu:
   main:
     parent: 'reference'
     weight: 0
-    url: https://godoc.org/github.com/99designs/gqlgen
+    url: https://godoc.org/github.com/LaBanHSPO/gqlgen
 ---

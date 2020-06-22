@@ -6,8 +6,8 @@ package graph
 import (
 	"context"
 
-	"github.com/99designs/gqlgen/example/federation/reviews/graph/generated"
-	"github.com/99designs/gqlgen/example/federation/reviews/graph/model"
+	"github.com/LaBanHSPO/gqlgen/example/federation/reviews/graph/generated"
+	"github.com/LaBanHSPO/gqlgen/example/federation/reviews/graph/model"
 )
 
 func (r *entityResolver) FindProductByUpc(ctx context.Context, upc string) (*model.Product, error) {
