@@ -1,7 +1,6 @@
 package transport
 
 import (
-	"fmt"
 	"mime"
 	"net/http"
 
