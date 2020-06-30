@@ -81,7 +81,7 @@ func (h POST) Do(w http.ResponseWriter, r *http.Request, exec graphql.GraphExecu
 	ctx := graphql.WithOperationContext(r.Context(), rc)
 	responses, ctx := exec.DispatchOperation(ctx, rc)
 
-	fmt.Printf("Output: responses: %v", responses)
+	// fmt.Printf("Output: responses: %v", responses)
 
 	writeJson(w, responses(ctx))
 }
