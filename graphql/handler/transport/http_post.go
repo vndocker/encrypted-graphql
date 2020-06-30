@@ -45,7 +45,7 @@ func (h POST) Do(w http.ResponseWriter, r *http.Request, exec graphql.GraphExecu
 	var params *graphql.RawParams
 	start := graphql.Now()
 
-	fmt.Printf("Content Input Transport: %v", r.Body)
+	// fmt.Printf("Content Input Transport: %v", r.Body)
 
 	//get private key
 	//priv, err := pki.GetPrivateKey()
@@ -70,7 +70,7 @@ func (h POST) Do(w http.ResponseWriter, r *http.Request, exec graphql.GraphExecu
 
 	rc, err := exec.CreateOperationContext(r.Context(), params)
 
-	fmt.Printf("Prepare output: Params: %v, RC: %v", params, rc)
+	// fmt.Printf("Prepare output: Params: %v, RC: %v", params, rc)
 
 	if err != nil {
 		w.WriteHeader(statusFor(err))
